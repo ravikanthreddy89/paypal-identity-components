@@ -14,18 +14,18 @@ type ButtonConfig = {|
     only? : boolean,
     filename? : string,
     userAgent? : string,
-    container? : {
+    container? : {|
         width : number
-    },
-    button? : {
+    |},
+    button? : {|
         fundingSource? : $Values<typeof FUNDING>,
         locale? : string,
-        style? : {
+        style? : {|
             color? : string,
             shape? : string,
             label? : string
-        }
-    }
+        |}
+    |}
 |};
 
 export const buttonConfigs : Array<ButtonConfig> = [];
